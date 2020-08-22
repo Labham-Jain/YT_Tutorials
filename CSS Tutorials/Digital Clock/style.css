@@ -1,0 +1,31 @@
+/* Official Work Of Labham */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: digitalclock;
+    src: url(./DS-DIGI.TTF);
+}
+body{
+    background: #333333;
+}
+.box{
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    border: 10px solid #333333;
+    border-radius: 5px;
+    background: #555555;
+    margin-top: 200px;
+    text-align: center;
+    box-shadow: 10px -7px 15px rgba(0,0,0,0.4), rgba(0,0,0,0.4) 0px 7px 30px inset;
+}
+#time{
+    font-size: 90px;
+    padding-top: 50px;
+    color: red;
+    font-family: digitalclock;
+}
+/* File Will Be Provided In Description */

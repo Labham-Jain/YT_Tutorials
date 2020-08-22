@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 5%;
+	overflow: hidden;
+}
+.menu input[name="tab"] {
+	display: none;
+}
+.menu section {
+	display: grid;
+	grid-template-columns: repeat(4, 100%);
+	gap: 40px;
+	/* Overflow In This Won't Work */
+}
+input:nth-child(1):checked ~ section {
+	transform: translateX(0%);
+}
+input:nth-child(2):checked ~ section {
+	transform: translateX(calc(-100% - 40px));
+}
+input:nth-child(3):checked ~ section {
+	transform: translateX(calc(-200% - 80px));
+}
+input:nth-child(4):checked ~ section {
+	transform: translateX(calc(-300% - 120px));
+}
+.labels {
+	display: flex;
+}
+.labels label {
+	margin: 0px 5px;
+	padding: 5px 10px;
+	align-items: center;
+	width: max-content;
+}
+input:nth-child(1):checked ~ .labels label[for="btn1"] {
+	background: #000;
+	color: #ffffff;
+}
+input:nth-child(2):checked ~ .labels label[for="btn2"] {
+	background: #000;
+	color: #ffffff;
+	padding: 5px 10px;
+	align-items: center;
+	width: max-content;
+}
+input:nth-child(3):checked ~ .labels label[for="btn3"] {
+	background: #000;
+	color: #ffffff;
+	padding: 5px 10px;
+	align-items: center;
+	width: max-content;
+}
+input:nth-child(4):checked ~ .labels label[for="btn4"] {
+	background: #000;
+	color: #ffffff;
+	padding: 5px 10px;
+	align-items: center;
+	width: max-content;
+}

@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.mansonry {
+	line-height: 40px;
+	column-count: 5;
+	padding: 0px 10px;
+}
+.mansonry img {
+	width: 100% !important;
+	height: auto !important;
+}
+@media screen and (max-width: 867px) {
+	.mansonry {
+		line-height: 40px;
+		column-count: 4;
+	}
+}
+@media screen and (max-width: 660px) {
+	.mansonry {
+		line-height: 40px;
+		column-count: 3;
+	}
+}
+@media screen and (max-width: 486px) {
+	.mansonry {
+		line-height: 40px;
+		column-count: 2;
+	}
+}

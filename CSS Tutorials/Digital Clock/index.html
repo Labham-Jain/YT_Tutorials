@@ -1,0 +1,27 @@
+<!-- Official Work Of Labham -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digital Clock - Labham Jain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <p id="time"></p>
+    </div>
+    <script>
+    // javascript
+    let p = document.querySelector("#time");
+    setInterval(function(){
+        let date = new Date();
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        p.innerHTML = hr+":"+min+":"+sec;
+    });
+    </script>
+</body>
+</html>

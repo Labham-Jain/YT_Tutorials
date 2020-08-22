@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PUBG Effect In PURE CSS - Labham Jain</title>
+    <style>
+    @font-face {
+        font-family: PUBGFont;
+        src: url('./HeadlinerNo.45 DEMO.ttf');
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .box{
+        font-family: PUBGFont;
+        font-size: 72px;
+        position: relative;
+        padding: 0 10px;
+        border: 10px solid rgb(192,144,23);
+        color: rgb(192,144,23);
+        border-radius: 5px;
+        transform: scale(5);
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 50%;
+        top: 15%;
+        left: -15%;
+        background: transparent;
+        border-top: 10px solid rgb(192,144,23);
+        border-bottom: 10px solid rgb(192,144,23);
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 50%;
+        top: 15%;
+        right: -15%;
+        background: transparent;
+        border-top: 10px solid rgb(192,144,23);
+        border-bottom: 10px solid rgb(192,144,23);
+    }
+    </style>
+</head>
+<body>
+    <div class="box">PUBG</div>
+</body>
+</html>

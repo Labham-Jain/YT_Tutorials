@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #333333;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login{
+    width: 300px;
+    height: 450px;
+    background: linear-gradient(#3c40c6,#ff5e57);
+    padding-top: 30px;
+}
+.image{
+    background: url('./img.jpg');
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 auto;
+}
+.email-div::before{
+    content: '\f007';
+    font-family: FontAwesome;
+    position: absolute;
+    top:35%;
+    color: white;
+    left: 5%;
+}
+.pass-div:before{
+    content: '\f084';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+}
+.input{
+    width: 100%;
+    padding: 10px 50px;
+    background: transparent;
+    margin: 15px 0px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: border-bottom 0.2s linear;
+}
+.input:focus{
+    outline: none;
+    border-bottom: 2px solid white;
+}
+.input::-webkit-input-placeholder{
+    color:white;
+}
+.social{
+    display: flex;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+.fb{
+    width: calc(50% - 5px);
+    background: #3c40c6;
+    height: 30px;
+    padding-top: 5px;
+}
+.google{
+    width: calc(50% - 5px);
+    height: 30px;
+    padding-top: 5px;
+    background: #e84118;
+}
+.footer-login{
+    color: white;
+    text-align: center;
+    /* cursor: pointer; */
+}
+.footer-login h4{
+    margin: 20px;
+    cursor: pointer;
+}
+.footer-login p{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Nice */

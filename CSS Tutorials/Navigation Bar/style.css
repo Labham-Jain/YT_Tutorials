@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#cb{
+    display: none;
+}
+label[for="cb"]{
+    margin-left: 40px;
+}
+#cb:checked label{
+    color: white;
+}
+#menu{
+    font-size: 32px;
+}
+aside{
+    width: 200px;
+    background:rgba(0,0,0,0.4);
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    transition: display 0.4s linear;
+    left: 0%;
+}
+.close{
+    float: right;
+    margin-top: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+    cursor: pointer;
+}
+.list
+{
+    padding-top: 30%;
+}
+.list-item{
+    margin:10px 30px;
+    list-style: none;
+}
+.list-item a{
+    color: black;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}

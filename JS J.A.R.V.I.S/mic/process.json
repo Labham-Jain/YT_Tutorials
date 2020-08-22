@@ -1,0 +1,10 @@
+{
+	"open instagram": "openWeb('https://instagram.com'); Speak('Opening Enstagram...')",
+	"open whatsapp": "openWeb('https://web.whatsapp.com'); Speak('Opening Whatsapp...')",
+	"open gmail": "openWeb('https://mail.google.com'); Speak('Opening Gmail')",
+	"open youtube": "openWeb('https://youtube.com'); Speak('Opening YouTube')",
+	"open mail": "openWeb('https://mail.google.com'); Speak('Opening Gmail')",
+	"timer": "setTimer(UserText);",
+	"time": "getCurrentTime();",
+	"weather": "getWeatherDetails();"
+}

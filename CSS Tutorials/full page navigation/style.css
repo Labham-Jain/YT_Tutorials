@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+/*  */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	align-items: center;
+	background: #222222;
+	justify-content: center;
+}
+nav {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+	flex-direction: column;
+	height: 80vh;
+	width: 80%;
+	overflow: hidden;
+	margin: 10vh auto;
+}
+nav li {
+	margin: 10px 0px;
+	list-style: none;
+}
+
+nav li a {
+	color: #ffffff;
+	font-size: 32px;
+	text-decoration: none;
+	font-family: "Jost", sans-serif;
+}
+nav li a::before {
+	content: attr(data-text);
+	color: rgba(255, 255, 255, 0.1);
+	position: absolute;
+	top: 0px;
+	z-index: -1;
+	left: 0px;
+	transform: translateY(100%);
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.01);
+	font-family: inherit;
+	font-size: 28vw;
+	transition: transform 300ms ease-in;
+}
+nav li a:hover::before {
+	transform: translateY(0%);
+}

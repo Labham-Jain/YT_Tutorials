@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box1,.box2{
+    width: 200px;
+    height: 200px;
+    background: red;
+    transition: transform 500s linear;
+}
+.box2{
+    background: green;
+}
+.box1:hover{
+    transform: rotateX(36000deg);
+}
+.box1:hover .box2{
+    margin-top: -200px;
+}

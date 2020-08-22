@@ -1,0 +1,24 @@
+/* Removed Unnesscery Styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	min-height: 100vh;
+}
+#microphoneButton {
+	background: #dbdbdb;
+	outline: none;
+	border: none;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+#Mic {
+	height: 80%;
+}

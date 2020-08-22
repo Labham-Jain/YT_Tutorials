@@ -1,0 +1,74 @@
+@media screen and (max-width: 796px) {
+	nav.nav .menu {
+		display: none;
+	}
+	nav.nav .menu_mobile.show {
+		transform: translateX(0%);
+	}
+	nav.nav button#menuToggle {
+		display: block;
+	}
+	.pricing-sec .cards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (max-width: 1296px) {
+	.pricing-sec {
+		padding: 0px 15%;
+	}
+	.pricing-sec .cards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (max-width: 1001px) {
+	.pricing-sec {
+		display: flex;
+		padding: 0px 30%;
+		justify-content: center;
+	}
+	.pricing-sec .cards {
+		grid-template-columns: 1fr;
+	}
+	.sponsers-sec h4 {
+		font-size: 32px;
+		margin-bottom: 80px;
+	}
+	.sponsers-sec .sponsers {
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 50px;
+	}
+}
+@media screen and (max-width: 693px) {
+	.pricing-sec {
+		display: flex;
+		padding: 0px 20%;
+		justify-content: center;
+	}
+	.pricing-sec .cards {
+		grid-template-columns: 1fr;
+	}
+	.about .files-host {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 10px;
+	}
+}
+@media screen and (max-width: 512px) {
+	.pricing-sec {
+		display: flex;
+		padding: 0px 15%;
+		justify-content: center;
+	}
+	.pricing-sec .cards {
+		grid-template-columns: 1fr;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		padding-left: 10%;
+		background: #222222;
+	}
+	footer li {
+		margin: 50px 0px;
+	}
+}

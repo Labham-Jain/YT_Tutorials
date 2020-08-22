@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #555555;
+}
+.card {
+	cursor: pointer;
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+	transition: all 0.2s linear;
+	background: linear-gradient(-135deg, aqua, purple);
+}
+.card:hover {
+	box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.603),
+		5px 5px 10px rgba(0, 0, 0, 0.384);
+}
+.card img {
+	width: 80%;
+}
+.card p {
+	font-size: 22px;
+	margin: 10px 0px;
+	padding: 10px;
+	border-radius: 50px;
+	font-family: sans-serif;
+}
+.card p:hover {
+	background: #000;
+	color: white;
+}

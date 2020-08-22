@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: #f1c40f;
+}
+.mango-box{
+    background: #d35400;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 100px auto;
+}
+.mango-icon{
+    width: 100px;
+    transform: rotate(-45deg);
+    transition: all 1s;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+.mango-icon:hover{
+    transform: rotate(0deg);
+}
+.mango-desc{
+    color: #f1c40f;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+@media screen and (max-width: 568px){
+    .mango-box{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 400px){
+    .mango-box{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .mango-icon{
+        justify-content: center;
+    }
+}
